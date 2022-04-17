@@ -5,11 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: ./.github/actions/hello-world
+      # - uses: ./.github/actions/hello-world
       - uses: actions/setup-node@v3
         with:
           node-version: '14'
 
       - name: Run and Build script
-        run: .github/scripts/build.sh
+        run: ./.github/scripts/build.sh
         shell: bash
