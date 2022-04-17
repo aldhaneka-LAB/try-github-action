@@ -11,5 +11,5 @@ jobs:
           node-version: '14'
 
       - name: Run and Build script
-        runs: ./.github/scripts/build.sh
+        run: .github/scripts/build.sh
         shell: bash
