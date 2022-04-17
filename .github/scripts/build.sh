@@ -1,2 +1,2 @@
 npm install -g bats
-bats -v
+cat bats -v > bats-version.txt

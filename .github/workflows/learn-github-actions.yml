@@ -13,3 +13,9 @@ jobs:
       - name: Run and Build script
         run: ./.github/scripts/build.sh
         shell: bash
+
+      - name: Upload Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: Hello World
+          path: bats-version.txt
