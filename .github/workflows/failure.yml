@@ -12,5 +12,9 @@ jobs:
   fail-it:
     name: Fail the job!
     runs-on: ubuntu-latest
-    scripts: |
-      core.setFailed("Fail!!!")
+    steps:
+      - name: Fail it!
+        uses: actions/github-script@v3
+        with:
+          scripts: |
+          core.setFailed("Fail!!!")
