@@ -12,5 +12,5 @@ jobs:
   fail-it:
     name: Fail the job!
     runs-on: ubuntu-latest
-    steps:
-      - run: failure()
+    scripts: |
+      core.setFailed("Fail!!!")
